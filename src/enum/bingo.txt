@@ -1,0 +1,244 @@
+const bingoEnum = [
+  {
+    id: 1,
+    question: 'Em que local a mulher samaritana teve um encontro com Jesus?',
+    answer: 'João 4.6-7 (fig. poço) ',
+    image: 'poco.png'
+  },
+  {
+    id: 2,
+    question: 'Jacó sonhou com Anjos subindo e descendo através do que?',
+    answer: 'Escada Gênesis 28.12 (fig. escada)',
+    image: 'escada.png'
+  },
+  {
+    id: 3,
+    question: 'Quantos filhos teve Noé?',
+    answer: '3 Gênesis 5.8 (fig. Número 3)',
+    image: 'numero-3.png'
+  },
+  {
+    id: 4,
+    question: 'Em que dia Deus criou os Animais?',
+    answer: '5º Gênesis 1.21-23 (fig. número 5)',
+    image: 'dia-5.png'
+  },
+  {
+    id: 5,
+    question: 'Qual era a atividade de Davi antes de ser ungido rei de Israel?',
+    answer: 'Pastor de Ovelhas 1 Samuel 16.11 (fig. pastor de ovelhas)',
+    image: 'pastor-de-ovelhas.png'
+  },
+  {
+    id: 6,
+    question: 'O Profeta Eli, morreu após ter caído de…',
+    answer: 'Cadeira 1 Samuel 4.18 (fig. cadeira)',
+    image: 'cadeira.png'
+  },
+  {
+    id: 7,
+    question: 'Quantos provérbios escreveu Salomão?',
+    answer: '3mil 1 Reis4.30-32',
+    image: '3-mil-proverbios.png'
+  },
+  {
+    id: 8,
+    question: 'Daniel e seus amigos decidiram ser fiéis a Deus e não comeram a comida do rei, mas comeram…',
+    answer: 'Vegetais Daniel 1.11-15',
+    image: 'vegetais.png'
+  },
+  {
+    id: 9,
+    question: 'Complete o versículo: “olho por olho, PIM por PIM, mão por mão, pé por pé.',
+    answer: 'Dente Êxodo 21.24 (fig. dente)',
+    image: 'dente.png'
+  },
+  {
+    id: 10,
+    question: 'Em quantos dias Neemias edificou os muros de Jerusalém?',
+    answer: '52 Neemias 6.15 (fig. número 52)',
+    image: 'numero-52.png'
+  },
+  {
+    id: 11,
+    question: 'O que Pedro encontrou na boca de um peixe?',
+    answer: 'Moeda Mateus 17.27 (fig. moeda)',
+    image: 'moeda-peixe.png'
+  },
+  {
+    id: 12,
+    question: 'Onde Onésimo se tornou um Cristão?',
+    answer: 'Prisão Filemom 10 (fig. prisão)',
+    image: 'prisao.png'
+  },
+  {
+    id: 13,
+    question: 'Enquanto o povo de Israel estava cativo do Egito eles eram obrigados a fazer?',
+    answer: 'Tijolos Êxodo 5.7 (fig. tijolo)',
+    image: 'tijolo.png'
+  },
+  {
+    id: 14,
+    question: 'Quantos livros têm a Bíblia?',
+    answer: '66 (fig. número 66)',
+    image: '66-biblia.png'
+  },
+  {
+    id: 15,
+    question: 'Quantos livros têm o Velho Testamento?',
+    answer: '39 (fig. número 39)',
+    image: 'numero-39.png'
+  },
+  {
+    id: 16,
+    question: 'Quantos livros têm o Novo Testamento?',
+    answer: '27 (fig. número 27)',
+    image: 'numero-27.png'
+  },
+  {
+    id: 17,
+    question: 'Um dos milagres do Profeta Elizeu foi fazer flutuar um…',
+    answer: 'Machado 2 Reis 6.5-7 (fig. Macgado)',
+    image: 'machado.png'
+  },
+  {
+    id: 18,
+    question: 'Qual foi a segunda praga que Deus enviou para o Egito?',
+    answer: 'Rã Êxodo 8.2 (fig. rã)',
+    image: 'ra.png'
+  },
+  {
+    id: 19,
+    question: 'Qual a quarta praga que Deus enviou para o Egito?',
+    answer: 'Mosca Êxodo 8.24.21',
+    image: 'mosca.png'
+  },
+  {
+    id: 20,
+    question: 'Qual a oitava praga do Egito?',
+    answer: 'Gafanhotos Ex.10.4 (fig. gafanhoto)',
+    image: 'gafanhoto.png'
+  },
+  {
+    id: 21,
+    question: 'O que Deus amou tanto para entregar seu Filho Jesus como sacrifício por nossas vidas?',
+    answer: 'Mundo João 3.16 (fig. mundo)',
+    image: 'mundo.png'
+  },
+  {
+    id: 22,
+    question: 'Quem foi o primeiro rei de Israel?',
+    answer: 'Saul (fig. coroa com nome)',
+    image: 'rei-saul.png'
+  },
+  {
+    id: 23,
+    question: 'No Livro de Provérbios, que inseto ensina ao preguiçoso sobre o trabalho?',
+    answer: 'Formiga Provérbios 6.6 (fig. formiga)',
+    image: 'formiga.png'
+  },
+  {
+    id: 24,
+    question: 'Qual foi a cidade onde Jesus realizou o primeiro Milagre?',
+    answer: 'Caná da Galiléia João 2.11 (fig. casa com nome da cidade)',
+    image: 'mapa-galileia.png'
+  },
+  {
+    id: 25,
+    question: 'Moisés foi usado por Deus para libertar Israel do cativeiro. De que país?',
+    answer: 'Egito Êxodo 3.10 (fig. nome Egito)',
+    image: 'egito.png'
+  },
+  {
+    id: 26,
+    question: 'Qual foi a cidade onde Jesus curou um paralítico levado pelos seus quatro amigos?',
+    answer: 'Cafarnaum Marcos 2.11 (fig. casa com nome da cidade)',
+    image: 'mapa-cafarnaum.png'
+  },
+  {
+    id: 27,
+    question: 'Quantos anos tinha José quando foi vendido por seus irmãos?',
+    answer: '17 Gênesis 37.2, 28 (fig. número 17)',
+    image: 'numero-17.png'
+  },
+  {
+    id: 28,
+    question: 'Qual a profissão de Cornélio?',
+    answer: 'Centurião Atos 10.1 (fig. centurião/soldado)',
+    image: 'centuriao-soldado.png'
+  },
+  {
+    id: 29,
+    question: 'Qual a profissão de Lucas?',
+    answer: 'Médico Colossenses 4.14 (fig. de médico)',
+    image: 'medico.png'
+  },
+  {
+    id: 30,
+    question: 'Quantas cartas o Apóstolo Paulo escreveu?',
+    answer: '13 (fig. número 13)',
+    image: 'cartas-13.png'
+  },
+  {
+    id: 31,
+    question: 'Quem foi o segundo rei de Israel?',
+    answer: 'Davi (fig. coroa com nome)',
+    image: 'rei-davi.png'
+  },
+  {
+    id: 32,
+    question: 'Quem foi o terceiro rei de Israel?',
+    answer: 'Salomão (fig. coroa com nome)',
+    image: 'rei-salomao.png'
+  },
+  {
+    id: 33,
+    question: 'Por quantas moedas José foi vendido por seus irmãos?',
+    answer: '20 Gênesis 37.2, 28 (fig. dinheiro número 20)',
+    image: '20-moedas.png'
+  },
+  {
+    id: 34,
+    question: 'Por quantas moedas Judas traiu Jesus?',
+    answer: '30 Mateus 26.14-16 (fig. dinheiro número 30)',
+    image: '30-moedas.png'
+  },
+  {
+    id: 35,
+    question: 'Quantos são os livros históricos do VT?',
+    answer: '12 (fig. número 12)',
+    image: 'numero-12.png'
+  },
+  {
+    id: 36,
+    question: 'Com que instrumento Davi derrotou o gigante Golias?',
+    answer: 'Funda I Samuel 17.49 (fig. funda)',
+    image: 'funda.png'
+  },
+  {
+    id: 37,
+    question: 'Quem foi curado de lepra pelo Profeta Elizeu?',
+    answer: 'Naamã 2 Reis 5.14 (fig. nome)',
+    image: 'naama.png'
+  },
+  {
+    id: 38,
+    question: 'Que Instrumento musical Davi tocava para acalmar o rei Saul?',
+    answer: 'Harpa 1 Samuel 16.23 (fig. harpa)',
+    image: 'harpa.png'
+  },
+  {
+    id: 39,
+    question: 'Quem andou com Deus e Deus o tomou para si?',
+    answer: 'Enoque Gênesis 5.24 (fig. nome Enoque)',
+    image: 'enoque.png'
+  },
+  {
+    id: 40,
+    question: 'Quantos anos viveu Matusalém?',
+    answer: '969 anos Gênesis 5.27 (fig. número 969) ',
+    image: 'numero-969.png'
+  }
+]
+
+export { bingoEnum }
