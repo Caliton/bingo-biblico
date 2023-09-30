@@ -101,7 +101,7 @@
       </div>
     </div>
 
-    <div style="bottom: 0" class="fixed q-ma-sm">
+    <div style="bottom: 0" class="fixed q-ma-sm bg-white">
       <q-toggle size="xs" dense class="q-mr-md" v-model="canSort" label="com sorteio" />
       <q-btn rounded color="green" :flat="!checaQuemVenceu.length" no-caps size="xs" dense class="q-mr-md" @click="showGanhador = !showGanhador" label="Revelar vencedores" />
 
