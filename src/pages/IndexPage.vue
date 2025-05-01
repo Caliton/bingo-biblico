@@ -3,7 +3,7 @@
 
     <q-toolbar class="text-primary bingo-title">
       <q-toolbar-title style="font-size: 3rem;">
-        Bingo Biblico IBVN
+        Bingo Biblico
       </q-toolbar-title>
 
       <!-- <q-img style="width: 350px;" src="~assets/title-bingo.png" /> -->
